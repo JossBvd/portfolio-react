@@ -8,3 +8,4 @@ export {default as rickMortyImg} from './rick_morty.png';
 export {default as ppLinkedin} from './pp_linkedin.jpg';
 export {default as logo} from './logo.png';
 export {default as wavunity} from './wavunity.png';
+export {default as cv} from './Jocelyn_Bonvard_CV_2023_alternance.pdf';

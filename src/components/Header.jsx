@@ -1,4 +1,4 @@
-import cv from "../assets/img/Jocelyn_Bonvard_CV_2023_alternance.pdf";
+import { cv } from "../assets/img";
 import { ppLinkedin } from "../assets/img";
 
 export default function Header() {
