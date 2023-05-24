@@ -22,7 +22,7 @@ export default function ProjetsPage() {
         </h1>
         <h2 className="text-2xl font-bold text-gray-300 my-10 mx-10 text-center">Projet en cours, bientôt disponible</h2>
 
-        <div className="wrapper">
+        <div className="wrapper mb-20">
           <div className="cols">
             {projets.map((projet, index) => {
               return (

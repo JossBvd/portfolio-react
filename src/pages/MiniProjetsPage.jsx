@@ -65,7 +65,7 @@ export default function MiniProjetsPage() {
           Mini-projets
         </h1>
 
-        <div className="wrapper">
+        <div className="wrapper mb-20">
           <div className="cols">
             {projets.map((projet, index) => {
               return (
