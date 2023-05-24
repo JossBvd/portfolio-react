@@ -1,15 +1,29 @@
 import cv from "../assets/img/Jocelyn_Bonvard_CV_2023_alternance.pdf";
+import { ppLinkedin } from "../assets/img";
 
 export default function Header() {
   return (
-    <header className="text-gray-300 flex flex-col items-center text-center m-8">
+    <header
+      data-aos="zoom-in-down"
+      className="text-gray-300 flex flex-col items-center text-center m-8"
+    >
       <h1 className="text-3xl font-bold">Jocelyn Bonvard</h1>
       <h2 className="italic my-4">Développeur Fullstack</h2>
       <div className="flex justify-around items-center w-[100%]">
-        <a href="https://www.linkedin.com/in/jocelyn-bonvard" target="_blank" rel="noreferrer">
+        <a
+          href="https://www.linkedin.com/in/jocelyn-bonvard"
+          target="_blank"
+          rel="noreferrer"
+        >
           <i className="fa-brands fa-linkedin fa-2xl fa-shake"></i>
         </a>
-        <div className="bg-white h-[300px] w-[300px] my-4 rounded-full"></div>
+        <div
+          className="bg-white h-[300px] w-[300px] my-4 rounded-full"
+          style={{
+            backgroundImage: `url(${ppLinkedin})`,
+            backgroundSize: "cover",
+          }}
+        ></div>
         <a href="https://github.com/JossBvd" target="_blank" rel="noreferrer">
           <i className="fa-brands fa-github fa-2xl fa-shake"></i>
         </a>
