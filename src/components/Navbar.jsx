@@ -1,22 +1,14 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
+// import { logo } from "../assets/img";
 
 export default function Navbar() {
   // Etat
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [isUserMenuOpen, setUserMenuOpen] = useState(false);
 
   // Comportement
   const handleMobileMenuClick = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
-  };
-
-  const handleUserMenuClick = () => {
-    setUserMenuOpen(!isUserMenuOpen);
-  };
-
-  const closeMenus = () => {
-    setMobileMenuOpen(false);
-    setUserMenuOpen(false);
   };
 
   // Render
@@ -76,40 +68,40 @@ export default function Navbar() {
               </button>
             </div>
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-              <div className="flex flex-shrink-0 items-center">
+              {/* <div className="flex flex-shrink-0 items-center">
                 <img
                   className="block h-8 w-auto lg:hidden"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                  alt="Your Company"
+                  src={logo}
+                  alt="JossBvd"
                 />
                 <img
                   className="hidden h-8 w-auto lg:block"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                  alt="Your Company"
+                  src={logo}
+                  alt="JossBvd"
                 />
-              </div>
+              </div> */}
 
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-4">
                   {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
-                  <a
-                    href="#"
+                  <NavLink
+                    to="/"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                   >
                     Accueil
-                  </a>
-                  <a
-                    href="#"
+                  </NavLink>
+                  <NavLink
+                    to="/projets"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                   >
                     Projets
-                  </a>
-                  <a
-                    href="#"
+                  </NavLink>
+                  <NavLink
+                    to="/mini-projets"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                   >
                     Mini-projets
-                  </a>
+                  </NavLink>
                 </div>
               </div>
             </div>
@@ -121,24 +113,24 @@ export default function Navbar() {
           <div className="sm:hidden" id="mobile-menu">
             <div className="space-y-1 px-2 pb-3 pt-2">
               {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
-              <a
-                href="#"
+              <NavLink
+                to="/"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
               >
                 Accueil
-              </a>
-              <a
-                href="#"
+              </NavLink>
+              <NavLink
+                to="/projets"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
               >
                 Projets
-              </a>
-              <a
-                href="#"
+              </NavLink>
+              <NavLink
+                to="/mini-projets"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
               >
                 Mini-projets
-              </a>
+              </NavLink>
             </div>
           </div>
         )}
