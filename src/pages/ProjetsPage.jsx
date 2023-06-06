@@ -10,7 +10,7 @@ export default function ProjetsPage() {
       description:
         "Plateforme de mise en relation entre artistes et producteurs, réseau social",
       cover: wavunity,
-      url: "https://rick-morty-sand.vercel.app/",
+      url: "https://www.wavunity.fr/",
     },
   ]);
 
@@ -20,7 +20,6 @@ export default function ProjetsPage() {
         <h1 className="text-3xl font-bold text-gray-300 my-10 ml-10">
           Projets
         </h1>
-        <h2 className="text-2xl font-bold text-gray-300 my-10 mx-10 text-center">Projet en cours, bientôt disponible</h2>
 
         <div className="wrapper mb-20">
           <div className="cols">
